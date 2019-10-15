@@ -1,2 +1,8 @@
-<h1>good day</h1>
-<script>var t = "Testing";</script>
+<h1 id='greeting'>good day</h1>
+<button onclick='sayHi()'>Click Here</button>
+<script>
+  var t = "Testing";
+  function sayHi(){
+    document.getElementById('greeting').innerText = 'Kia Ora';
+  }
+</script>
