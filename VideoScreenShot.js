@@ -65,11 +65,11 @@
 		gotStream: function (stream) {
 			// Feed webcam stream to video element.
 			// IMPORTANT: video element needs autoplay attribute or it will be frozen at first frame.
-			if (window.URL) {
-				video.src = window.URL.createObjectURL(stream);
-			} else {
-				video.src = stream; // Opera support.
-			}
+			//if (window.URL) {
+			//	video.src = window.URL.createObjectURL(stream);
+			///} else {
+			video.src = stream; // Opera support.
+			//}
 			
 			// Store the stream. 
 			localMediaStream = stream;
