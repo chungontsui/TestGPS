@@ -3,11 +3,10 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 <h1 id='greeting'>good day</h1>
-<button onclick='sayHi()'>Click Here</button>
-<script>
-  var t = "Testing";
-  function sayHi(){
-    //document.getElementById('greeting').innerText = 'Kia Ora';
-    $('#greeting').html('Kia Ora');
-  }
-</script>
+<div id="interactive" class="viewport">
+  <canvas class="drawing" width="640" height="480"></canvas>
+  <video autoplay="true" preload="auto" src=""></video>
+</div>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js" integrity="sha256-JDVyLQRqvRSTL/6WaPud93JXpfEdW11zwjqhoNgkGXc=" crossorigin="anonymous"></script>
+<script src="live_w_locator.js" type="text/javascript"></script>
